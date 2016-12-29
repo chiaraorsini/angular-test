@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="DIApp">
   <head>
     <meta charset="utf-8">
     <script src="js/angular.min.js"></script>
@@ -8,16 +8,11 @@
     <title>Lecture 02 - Single Page Web Applications with AngularJS</title>
   </head>
 
-  <body ng-app="NameCalculator">
-    <h1>Name calculator</h1>
-    <div ng-controller="NameCalculatorController">
-        <div>
-            Your name:
-            <input type="text" ng-model="name" ng-keyup="displayNumeric()">
-        </div>
-        <div>
-            Total numeric value: {{total_val}}
-        </div>
+  <body>
+    <h1>Dependency Injection</h1>
+    <div ng-controller="DIController">
+        Dependency Injection
+        <input type="text" ng-model="name" ng-blur='upper()'>
     </div>
   </body>
 

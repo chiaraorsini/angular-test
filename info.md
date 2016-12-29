@@ -32,7 +32,7 @@ It's that glue between the view model we just discussed and the view that contai
 This component, the declarative binder, is the key enabler of the whole MVVM pattern. Without it, you would have to write all these bindings by hand and the whole pattern goes out the window.
 
 
-## Summary
+### Summary
 
 View =  presentation - HTML/CSS
     - UI that never changes data, declares events
@@ -42,3 +42,8 @@ Model = data / business logic - JS
     - represents and holds raw data
 DeclarativeBinder
     - binds ViewModel to the View
+
+
+## Dependency Injection
+
+Inversion of Control (IoC) - the client gets called by some system with the dependency, so that the client is not responsible fro the dependency.
