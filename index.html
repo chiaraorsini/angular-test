@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="DIApp">
+<html ng-app="MsgApp">
   <head>
     <meta charset="utf-8">
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
     <style>body { font-size: 1.5em; }</style>
-    <title>Lecture 02 - Single Page Web Applications with AngularJS</title>
+    <title>Expressions and interpolation</title>
   </head>
 
   <body>
-    <h1>Dependency Injection</h1>
-    <div ng-controller="DIController">
-        Dependency Injection
-        <input type="text" ng-model="name" ng-blur='upper()'>
+    <h1>Expressions and interpolation</h1>
+    <div ng-controller="MsgController">
+        Message is: <br>
+        {{sayMessage()}}
     </div>
   </body>
 

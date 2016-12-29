@@ -3,25 +3,42 @@
 
     'use strict';
 
+    angular.module('MsgApp', [])
+        .controller('MsgController', MsgController);
 
-    angular.module('DIApp', [])
-        .controller('DIController', DIController);
-
-    DIController.$inject = ['$scope', '$filter']
-    function DIController ($scope, $filter) {
+    MsgController.$inject = ['$scope']
+    function MsgController ($scope) {
         $scope.name = "Test";
+        $scope.sayMessage = function () {
 
-        $scope.upper = function () {
-            var upCase = $filter('uppercase');
-            $scope.name = upCase($scope.name);
+            return "lanlfnladfnafla";
         };
     }
 
-    function annotateMe(name, job, blah) {
-        return "blah";
-    }
+
+    // Expressions and Interpolation
 
 
+    // // Minification
+    // angular.module('DIApp', [])
+    //     .controller('DIController', DIController);
+
+    // DIController.$inject = ['$scope', '$filter']
+    // function DIController ($scope, $filter) {
+    //     $scope.name = "Test";
+
+    //     $scope.upper = function () {
+    //         var upCase = $filter('uppercase');
+    //         $scope.name = upCase($scope.name);
+    //     };
+    // }
+
+    // function annotateMe(name, job, blah) {
+    //     return "blah";
+    // }
+
+
+    // // Dependency Injection
     // angular.module('NameCalculator', [])
     // .controller('NameCalculatorController', function ($scope) {
     //     // $scope --> allow for properties to be exposed on the view

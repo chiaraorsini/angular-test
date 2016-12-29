@@ -47,3 +47,16 @@ DeclarativeBinder
 ## Dependency Injection
 
 Inversion of Control (IoC) - the client gets called by some system with the dependency, so that the client is not responsible fro the dependency.
+
+
+## Expressions and Interpolation
+
+{{something}} that evaluates to some value:
+    * it is executed in the context of the scope
+    * it has access to the scope properties
+
+Expressions do not display type errors and reference errors
+
+
+
+
